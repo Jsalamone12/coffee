@@ -27,7 +27,9 @@ const Detail = () => {
         <div>
             {
                 coffee ?
+                
                     <div className='container'>
+                        <p><Link to="/"> Home</Link></p>
                         <h2>Name: {coffee.name}</h2>
                         <h2>Description: {coffee.description}</h2>
                         <h2 className='text-success'>Price: {coffee.price}</h2>
@@ -36,7 +38,9 @@ const Detail = () => {
                         <Link className='btn btn-outline-warning text-black me-2' to='/'>Back</Link>
                         <button type="button" className='btn btn-outline-danger' onClick={handleDelete}>Delete</button>
                     </div> :
-                    <h1>loading...</h1>
+                    
+                    <h1>loading... </h1>
+                    
             }
 
         </div>

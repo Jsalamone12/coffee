@@ -63,6 +63,7 @@ const Edit = () => {
 
     return (
         <div>
+            <p><Link to="/"> Home</Link></p>
             <form className='form' onSubmit={handleSubmit}>
                 <div>
                     <label>Name: </label>
